@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221015011718">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221023213955">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,67 +15,60 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="header__container">
+			<div class="header__menu menu">
+				<div class="menu__logo">
+					<img src="img/logo.svg" alt="logo">
+				</div>
+				<nav class="menu__body">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#" data-goto=".page__surf" class="menu__link link">
+								<div class="link__icon">
+									<img src="img/menu/icons/surf.svg" alt="Surf">
+								</div>
+								<div class="link__title">Surf</div>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" data-goto=".page__travel" class="menu__link link">
+								<div class="link__icon">
+									<img src="img/menu/icons/travel.svg" alt="Travel">
+								</div>
+								<div class="link__title">Travel</div>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" data-goto=".page__sleep" class="menu__link link">
+								<div class="link__icon">
+									<img src="img/menu/icons/camp.svg" alt="Sleep">
+								</div>
+								<div class="link__title">Sleep</div>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" data-goto="" class="menu__link link">
+								<div class="link__icon">
+									<img src="img/menu/icons/shop.svg" alt="Shop">
+								</div>
+								<div class="link__title">Shop</div>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+				<button class="menu__search _icon-search"></button>
 			</div>
 		</header>
 		<main class="page">
-			<section class="page__main main-block">
+			<section data-watch class="page__main main-block">
 				<div class="main-block__body">
 					<div class="main-block__sub-label sub-label">
 						<img src="img/section-sub-label/go-surf.svg" alt="">
 					</div>
-					<div class="main-block__menu menu">
-						<div class="menu__logo">
-							<img src="img/logo.svg" alt="logo">
-						</div>
-						<nav class="menu__body">
-							<ul class="menu__list">
-								<li class="menu__item">
-									<a href="" class="menu__link link">
-										<div class="link__icon">
-											<img src="img/menu/icons/surf.svg" alt="Surf">
-										</div>
-										<div class="link__title">Surf</div>
-									</a>
-								</li>
-								<li class="menu__item">
-									<a href="" class="menu__link link">
-										<div class="link__icon">
-											<img src="img/menu/icons/travel.svg" alt="Travel">
-										</div>
-										<div class="link__title">Travel</div>
-									</a>
-								</li>
-								<li class="menu__item">
-									<a href="" class="menu__link link">
-										<div class="link__icon">
-											<img src="img/menu/icons/camp.svg" alt="Sleep">
-										</div>
-										<div class="link__title">Sleep</div>
-									</a>
-								</li>
-								<li class="menu__item">
-									<a href="" class="menu__link link">
-										<div class="link__icon">
-											<img src="img/menu/icons/shop.svg" alt="Shop">
-										</div>
-										<div class="link__title">Shop</div>
-									</a>
-								</li>
-							</ul>
-						</nav>
-						<a href="" class="menu__search _icon-search"></a>
-						<a href="" class="menu__date date">
-							<div class="date__day">20</div>
-							<div class="date__month">06</div>
-							<div class="date__year">18</div>
-						</a>
-						<a href="" class="menu__location _icon-location">California</a>
-					</div>
 					<div class="main-block__slider swiper">
 						<div class="main-block__wrapper swiper-wrapper">
 							<div class="main-block__map map-main-block">
-								<div class="map-main-block__image"><img src="img/main-slider/map/map.svg" alt=""></div>
+								<div class="map-main-block__image"><img src="img/main-slider/map/map-2.svg" alt=""></div>
 								<ul class="map-main-block__items">
 									<li class="map-main-block__item_1"></li>
 									<li class="map-main-block__item_2"></li>
@@ -158,7 +151,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__surf surf-block">
+			<section data-watch class="page__surf surf-block">
 				<div class="surf-block__body">
 					<div class="surf-block__container">
 						<div class="surf-block__section-title title-section">
@@ -492,7 +485,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__travel travel-block">
+			<section data-watch class="page__travel travel-block">
 				<div class="travel-block__body">
 					<div class="travel-block__container">
 						<div class="travel-block__section-title title-section">
@@ -648,7 +641,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__sleep sleep-block">
+			<section data-watch class="page__sleep sleep-block">
 				<div class="sleep-block__body">
 					<div class="sleep-block__container">
 						<div class="sleep-block__section-title title-section">
@@ -767,7 +760,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20221015011718"></script>
+	<script src="js/app.min.js?_v=20221023213955"></script>
 </body>
 
 </html>
