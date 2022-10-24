@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
 	<title>HomePage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221023213955">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221025005019">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,7 +56,15 @@
 					</ul>
 				</nav>
 				<button type="button" class="menu__icon icon-menu"><span></span></button>
-				<button class="menu__search _icon-search"></button>
+				<div class="menu__search search-form">
+					<button type="button" class="search-form__icon _icon-search"></button>
+					<form action="#" class="search-form__item">
+						<div class="search-form__body">
+							<input autocomplete="off" type="text" name="form[]" placeholder="Search " class="search-form__input">
+							<button type="button" class="search-form__icon-form _icon-search"></button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</header>
 		<main class="page">
@@ -70,11 +78,10 @@
 							<div class="main-block__map map-main-block">
 								<div class="map-main-block__image"><img src="img/main-slider/map/map-2.svg" alt=""></div>
 								<ul class="map-main-block__items">
-									<li class="map-main-block__item_1"></li>
-									<li class="map-main-block__item_2"></li>
-									<li class="map-main-block__item_3"></li>
-									<li class="map-main-block__item_4"></li>
-									<li class="map-main-block__item_5"></li>
+									<li data-watch class="map-main-block__item map-main-block__item_1"></li>
+									<li data-watch class="map-main-block__item map-main-block__item_2"></li>
+									<li data-watch class="map-main-block__item map-main-block__item_3"></li>
+									<li data-watch class="map-main-block__item map-main-block__item_4"></li>
 								</ul>
 							</div>
 							<div class="main-block__slide swiper-slide">
@@ -173,7 +180,7 @@
 								<div class="navigation-block__poi"><img src="img/section-surf/poi.svg" alt="poi"></div>
 								<div class="navigation-block__coordinates"><picture><source srcset="img/section-surf/coordinates.webp" type="image/webp"><img src="img/section-surf/coordinates.png" alt="coordinates"></picture></div>
 								<ul class="navigation-block__items">
-									<li class="navigation-block__item navigation-block__item_1 poi-navigation">
+									<li data-watch class="navigation-block__item navigation-block__item_1 poi-navigation">
 										<a href="#" class="poi-navigation__item"><span></span>
 											<div class="poi-navigation__information information-poi-body">
 												<div class="information-poi-body__title-content">
@@ -200,7 +207,7 @@
 											</div>
 										</a>
 									</li>
-									<li class="navigation-block__item navigation-block__item_2 poi-navigation">
+									<li data-watch class="navigation-block__item navigation-block__item_2 poi-navigation">
 										<a href="#" class="poi-navigation__item"><span></span>
 											<div class="poi-navigation__information information-poi-body">
 												<div class="information-poi-body__title-content">
@@ -227,7 +234,7 @@
 											</div>
 										</a>
 									</li>
-									<li class="navigation-block__item navigation-block__item_3 poi-navigation">
+									<li data-watch class="navigation-block__item navigation-block__item_3 poi-navigation">
 										<a href="#" class="poi-navigation__item"><span></span>
 											<div class="poi-navigation__information information-poi-body">
 												<div class="information-poi-body__title-content">
@@ -254,7 +261,7 @@
 											</div>
 										</a>
 									</li>
-									<li class="navigation-block__item navigation-block__item_4 poi-navigation">
+									<li data-watch class="navigation-block__item navigation-block__item_4 poi-navigation">
 										<a href="#" class="poi-navigation__item"><span></span>
 											<div class="poi-navigation__information information-poi-body">
 												<div class="information-poi-body__title-content">
@@ -281,7 +288,7 @@
 											</div>
 										</a>
 									</li>
-									<li class="navigation-block__item navigation-block__item_5 poi-navigation">
+									<li data-watch class="navigation-block__item navigation-block__item_5 poi-navigation">
 										<a href="#" class="poi-navigation__item"><span></span>
 											<div class="poi-navigation__information information-poi-body">
 												<div class="information-poi-body__title-content">
@@ -308,7 +315,7 @@
 											</div>
 										</a>
 									</li>
-									<li class="navigation-block__item navigation-block__item_6 poi-navigation">
+									<li data-watch class="navigation-block__item navigation-block__item_6 poi-navigation">
 										<a href="#" class="poi-navigation__item"><span></span>
 											<div class="poi-navigation__information information-poi-body">
 												<div class="information-poi-body__title-content">
@@ -335,7 +342,7 @@
 											</div>
 										</a>
 									</li>
-									<li class="navigation-block__item navigation-block__item_7 poi-navigation">
+									<li data-watch class="navigation-block__item navigation-block__item_7 poi-navigation">
 										<a href="#" class="poi-navigation__item"><span></span>
 											<div class="poi-navigation__information information-poi-body">
 												<div class="information-poi-body__title-content">
@@ -362,7 +369,7 @@
 											</div>
 										</a>
 									</li>
-									<li class="navigation-block__item navigation-block__item_8 poi-navigation">
+									<li data-watch class="navigation-block__item navigation-block__item_8 poi-navigation">
 										<a href="#" class="poi-navigation__item"><span></span>
 											<div class="poi-navigation__information information-poi-body">
 												<div class="information-poi-body__title-content">
@@ -565,7 +572,7 @@
 											</ul>
 										</div>
 										<div class="sub-content__footer footer-sub-content">
-											<button type="button" class="footer-sub-content__button button _icon-arrow">Flight <span></span> Book</button>
+											<button type="button" class="footer-sub-content__button button button_travel _icon-arrow">Flight <span></span> Book</button>
 											<div class="footer-sub-content__image">
 												<img src="img/section-travel/cocktail.svg" alt="cocktail">
 											</div>
@@ -656,10 +663,10 @@
 							<div class="sub-title__top">Resorts</div>
 							<div class="sub-title__bottom">Auberge <span>|</span> Australia</div>
 						</div>
-						<div class="sleep-block__controls controls-slider">
-							<div class="controls-slider__arrows slider-arrows">
-								<button type="button" class="slider-arrow slider-arrow_next _icon-arrow"></button>
-								<button type="button" class="slider-arrow slider-arrow_prev _icon-arrow"></button>
+						<div class="sleep-block__controls controls-slider-sleep">
+							<div class="controls-slider-sleep__arrows slider-arrows-sleep">
+								<button type="button" class="slider-arrows-sleep slider-arrows-sleep_next _icon-arrow"></button>
+								<button type="button" class="slider-arrows-sleep slider-arrows-sleep_prev _icon-arrow"></button>
 							</div>
 						</div>
 					</div>
@@ -727,7 +734,7 @@
 											</ul>
 										</div>
 										<div class="sub-content__footer footer-sub-content">
-											<button type="button" class="footer-sub-content__button button _icon-arrow">Stay <span></span> Book</button>
+											<button type="button" class="footer-sub-content__button button button_sleep _icon-arrow">Stay <span></span> Book</button>
 											<div class="footer-sub-content__image">
 												<picture><source srcset="img/section-sleep/frangipani.webp" type="image/webp"><img src="img/section-sleep/frangipani.png" alt="cocktail"></picture>
 											</div>
@@ -735,7 +742,209 @@
 									</div>
 								</div>
 							</div>
-
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch class="page__shop shop-block">
+				<div class="shop-block__body">
+					<div class="shop-block__container">
+						<div class="shop-block__section-title title-section">
+							<div class="title-section__title">
+								<h2>Shop</h2>
+							</div>
+							<div class="title-section__sub-label">
+								<img src="img/section-sub-label/shop.svg" alt="shop">
+							</div>
+						</div>
+						<div class="shop-block__controls controls-slider-shop">
+							<div class="controls-slider__arrows slider-arrows-shop">
+								<button type="button" class="slider-arrows-shop slider-arrows-shop_next _icon-arrow"></button>
+								<button type="button" class="slider-arrows-shop slider-arrows-shop_prev _icon-arrow"></button>
+							</div>
+						</div>
+					</div>
+					<div class="shop-block__slider-content slider-content-shop ">
+						<div class="slider-content-shop__wrapper swiper-wrapper">
+							<div data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" class="slider-content-shop__slide swiper-slide">
+								<div class="slider-content-shop__container">
+									<div class="slider-content-shop__info">
+										<div class="slider-content-shop__title title-sub-content">
+											<div class="title-sub-content__text sub-title-left">
+												<div data-swiper-parallax="-150" class="sub-title-left__top">Style</div>
+												<div data-swiper-parallax="-250" class="sub-title-left__bottom bottom-sub-title">
+													<div class="bottom-sub-title__text">North Nugget TT <br> Surfboard</div>
+												</div>
+											</div>
+										</div>
+										<div data-swiper-parallax="-350" class="slider-content-shop__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value">4.4</div>
+										</div>
+										<div data-swiper-parallax="-450" class="slider-content-shop__price">$799<span>99</span> </div>
+										<button type="button" class="slider-content-shop__button button button_shop _icon-arrow">In <span></span> Drop</button>
+									</div>
+									<div class="slider-content-shop__product product-slider-image">
+										<div class="product-slider-shop__picture">
+											<img src="img/section-shop/slider/surfboard.svg" alt="Surfboard">
+										</div>
+										<div class="product-slider-image__tips">
+											<button data-tippy-content="Double Concave with Vee Shape low point" class="product-slider-image__tip product-slider-image__tip_1"><span>+</span></button>
+											<button data-tippy-content="Double Concave with Vee Shape low point" class="product-slider-image__tip product-slider-image__tip_2"><span>+</span></button>
+											<button data-tippy-content="Double Concave with Vee Shape low point" class="product-slider-image__tip product-slider-image__tip_3"><span>+</span></button>
+										</div>
+									</div>
+									<div class="slider-content-shop__extras extras-shop-product">
+										<div data-swiper-parallax="-550" class="extras-shop-product__title">Extras</div>
+										<div class="extras-shop-product__items">
+											<div class="extras-shop-product__item extras-shop-item">
+												<div class="extras-shop-item__image">
+													<picture><source srcset="img/section-shop/slider/wax.webp" type="image/webp"><img src="img/section-shop/slider/wax.png" alt="Wax"></picture>
+												</div>
+												<div data-swiper-parallax="-450" class="extras-shop-item__title">Sex Wax</div>
+												<div data-swiper-parallax="-350" class="extras-shop-item__price">$24.99</div>
+											</div>
+											<div class="extras-shop-product__item extras-shop-item">
+												<div class="extras-shop-item__image">
+													<picture><source srcset="img/section-shop/slider/bracelet.webp" type="image/webp"><img src="img/section-shop/slider/bracelet.png" alt="Bracelet"></picture>
+												</div>
+												<div data-swiper-parallax="-450" class="extras-shop-item__title">Pura Vida</div>
+												<div data-swiper-parallax="-350" class="extras-shop-item__price">$27.99</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" class="slider-content-shop__slide swiper-slide">
+								<div class="slider-content-shop__container">
+									<div class="slider-content-shop__info">
+										<div class="slider-content-shop__title title-sub-content">
+											<div class="title-sub-content__text sub-title-left">
+												<div data-swiper-parallax="-150" class="sub-title-left__top">Style</div>
+												<div data-swiper-parallax="-250" class="sub-title-left__bottom bottom-sub-title">
+													<div class="bottom-sub-title__text">North Nugget TT <br> Surfboard</div>
+												</div>
+											</div>
+										</div>
+										<div data-swiper-parallax="-350" class="slider-content-shop__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value">4.4</div>
+										</div>
+										<div data-swiper-parallax="-450" class="slider-content-shop__price">$876<span>00</span> </div>
+										<button type="button" class="slider-content-shop__button button button_shop _icon-arrow">In <span></span> Drop</button>
+									</div>
+									<div class="slider-content-shop__product product-slider-image">
+										<div class="product-slider-shop__picture">
+											<img src="img/section-shop/slider/surfboard.svg" alt="Surfboard">
+										</div>
+										<div class="product-slider-image__tips">
+											<button data-tippy-content="Double Concave with Vee Shape low point" class="product-slider-image__tip product-slider-image__tip_1"><span>+</span></button>
+											<button data-tippy-content="Double Concave with Vee Shape low point" class="product-slider-image__tip product-slider-image__tip_2"><span>+</span></button>
+											<button data-tippy-content="Double Concave with Vee Shape low point" class="product-slider-image__tip product-slider-image__tip_3"><span>+</span></button>
+										</div>
+									</div>
+									<div class="slider-content-shop__extras extras-shop-product">
+										<div data-swiper-parallax="-550" class="extras-shop-product__title">Extras</div>
+										<div class="extras-shop-product__items">
+											<div class="extras-shop-product__item extras-shop-item">
+												<div class="extras-shop-item__image">
+													<picture><source srcset="img/section-shop/slider/wax.webp" type="image/webp"><img src="img/section-shop/slider/wax.png" alt="Wax"></picture>
+												</div>
+												<div data-swiper-parallax="-450" class="extras-shop-item__title">Sex Wax</div>
+												<div data-swiper-parallax="-350" class="extras-shop-item__price">$34.56</div>
+											</div>
+											<div class="extras-shop-product__item extras-shop-item">
+												<div class="extras-shop-item__image">
+													<picture><source srcset="img/section-shop/slider/bracelet.webp" type="image/webp"><img src="img/section-shop/slider/bracelet.png" alt="Bracelet"></picture>
+												</div>
+												<div data-swiper-parallax="-450" class="extras-shop-item__title">Pura Vida</div>
+												<div data-swiper-parallax="-350" class="extras-shop-item__price">$17.27</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" class="slider-content-shop__slide swiper-slide">
+								<div class="slider-content-shop__container">
+									<div class="slider-content-shop__info">
+										<div class="slider-content-shop__title title-sub-content">
+											<div class="title-sub-content__text sub-title-left">
+												<div data-swiper-parallax="-150" class="sub-title-left__top">Style</div>
+												<div data-swiper-parallax="-250" class="sub-title-left__bottom bottom-sub-title">
+													<div class="bottom-sub-title__text">North Nugget TT <br> Surfboard</div>
+												</div>
+											</div>
+										</div>
+										<div data-swiper-parallax="-350" class="slider-content-shop__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value">4.4</div>
+										</div>
+										<div data-swiper-parallax="-450" class="slider-content-shop__price">$929<span>59</span> </div>
+										<button type="button" class="slider-content-shop__button button button_shop _icon-arrow">In <span></span> Drop</button>
+									</div>
+									<div class="slider-content-shop__product product-slider-image">
+										<div class="product-slider-shop__picture">
+											<img src="img/section-shop/slider/surfboard.svg" alt="Surfboard">
+										</div>
+										<div class="product-slider-image__tips">
+											<button data-tippy-content="Double Concave with Vee Shape low point" class="product-slider-image__tip product-slider-image__tip_1"><span>+</span></button>
+											<button data-tippy-content="Double Concave with Vee Shape low point" class="product-slider-image__tip product-slider-image__tip_2"><span>+</span></button>
+											<button data-tippy-content="Double Concave with Vee Shape low point" class="product-slider-image__tip product-slider-image__tip_3"><span>+</span></button>
+										</div>
+									</div>
+									<div class="slider-content-shop__extras extras-shop-product">
+										<div data-swiper-parallax="-550" class="extras-shop-product__title">Extras</div>
+										<div class="extras-shop-product__items">
+											<div class="extras-shop-product__item extras-shop-item">
+												<div class="extras-shop-item__image">
+													<picture><source srcset="img/section-shop/slider/wax.webp" type="image/webp"><img src="img/section-shop/slider/wax.png" alt="Wax"></picture>
+												</div>
+												<div data-swiper-parallax="-450" class="extras-shop-item__title">Sex Wax</div>
+												<div data-swiper-parallax="-350" class="extras-shop-item__price">$28.59</div>
+											</div>
+											<div class="extras-shop-product__item extras-shop-item">
+												<div class="extras-shop-item__image">
+													<picture><source srcset="img/section-shop/slider/bracelet.webp" type="image/webp"><img src="img/section-shop/slider/bracelet.png" alt="Bracelet"></picture>
+												</div>
+												<div data-swiper-parallax="-450" class="extras-shop-item__title">Pura Vida</div>
+												<div data-swiper-parallax="-350" class="extras-shop-item__price">$29.49</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slider-content-shop__bg bg-slider-shop">
+							<div class="bg-slider-shop__image">
+								<picture><source srcset="img/section-shop/slider/01.webp" type="image/webp"><img src="img/section-shop/slider/01.png" alt="Background"></picture>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -760,7 +969,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20221023213955"></script>
+	<script src="js/app.min.js?_v=20221025005019"></script>
 </body>
 
 </html>
