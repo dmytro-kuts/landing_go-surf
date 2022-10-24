@@ -767,25 +767,14 @@ body {
   left: 40px;
   opacity: 0;
   overflow: hidden;
-  -webkit-transition: opacity 1s ease 0s;
-  -o-transition: opacity 1s ease 0s;
-  transition: opacity 1s ease 0s;
-  -webkit-transition: -webkit-transform 0.3s ease 0s;
-  transition: -webkit-transform 0.3s ease 0s;
-  -o-transition: transform 0.3s ease 0s;
-  transition: transform 0.3s ease 0s;
-  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
-  -webkit-transform: translate(60px, 0px);
-      -ms-transform: translate(60px, 0px);
-          transform: translate(60px, 0px);
+  -webkit-transition: opacity 0.8s ease 0s;
+  -o-transition: opacity 0.8s ease 0s;
+  transition: opacity 0.8s ease 0s;
 }
 
 .active .search-form__item {
   opacity: 1;
   overflow: visible;
-  -webkit-transform: translate(0px, 0px);
-      -ms-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
 }
 
 .search-form__body {
@@ -2620,6 +2609,16 @@ body {
 @media (max-width: 47.99875em) and (any-hover: none) {
   .icon-menu {
     cursor: default;
+  }
+}
+
+@media (max-width: 29.99875em) {
+  .search-form__item {
+    max-width: 16.25rem;
+  }
+
+  .active .search-form__input {
+    max-width: 16.25rem;
   }
 }
 
