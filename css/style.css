@@ -1527,9 +1527,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-weight: 800;
-  font-size: 2rem;
   line-height: 1.25;
-  letter-spacing: 0.0625em;
+  letter-spacing: 0.09375em;
 }
 
 .slider-content-shop__price:not(:last-child) {
@@ -1648,7 +1647,6 @@ body {
 
 .extras-shop-product__title {
   font-weight: 800;
-  font-size: 1.75rem;
   line-height: 1.4285714286;
 }
 
@@ -1687,7 +1685,6 @@ body {
 
 .extras-shop-item__title {
   line-height: 1.2222222222;
-  letter-spacing: 0.4444444444em;
   opacity: 0.5;
 }
 
@@ -2248,6 +2245,18 @@ body {
   .surf-block__text {
     letter-spacing: 0.5rem;
   }
+
+  .slider-content-shop__price {
+    font-size: 2rem;
+  }
+
+  .extras-shop-product__title {
+    font-size: 1.75rem;
+  }
+
+  .extras-shop-item__title {
+    letter-spacing: 0.5rem;
+  }
 }
 
 @media (any-hover: hover) and (min-width: 80.5em) {
@@ -2270,7 +2279,7 @@ body {
   }
 
   .title-section__title h2 {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
   }
 
   .title-section__title h2::before {
@@ -2463,6 +2472,18 @@ body {
 
   .surf-block__text {
     letter-spacing: 0.25rem;
+  }
+
+  .slider-content-shop__price {
+    font-size: 1.75rem;
+  }
+
+  .extras-shop-product__title {
+    font-size: 1.25rem;
+  }
+
+  .extras-shop-item__title {
+    letter-spacing: 0.125rem;
   }
 }
 
@@ -2659,15 +2680,15 @@ body {
     }
 }
 
-@supports (font-size: clamp( 1.125rem , -0.1559917355rem  +  6.4049586777vw , 5rem )) {
+@supports (font-size: clamp( 1.5rem , 0.3429752066rem  +  5.7851239669vw , 5rem )) {
     .title-section__title h2 {
-      font-size: clamp( 1.125rem , -0.1559917355rem  +  6.4049586777vw , 5rem );
+      font-size: clamp( 1.5rem , 0.3429752066rem  +  5.7851239669vw , 5rem );
     }
 }
 
-@supports not (font-size: clamp( 1.125rem , -0.1559917355rem  +  6.4049586777vw , 5rem )) {
+@supports not (font-size: clamp( 1.5rem , 0.3429752066rem  +  5.7851239669vw , 5rem )) {
     .title-section__title h2 {
-      font-size: calc(1.125rem + 3.875 * (100vw - 20rem) / 60.5);
+      font-size: calc(1.5rem + 3.5 * (100vw - 20rem) / 60.5);
     }
 }
 
@@ -3244,6 +3265,42 @@ body {
 @supports not (letter-spacing: clamp( 0.25rem , 0.1673553719rem  +  0.4132231405vw , 0.5rem )) {
     .surf-block__text {
       letter-spacing: calc(0.25rem + 0.25 * (100vw - 20rem) / 60.5);
+    }
+}
+
+@supports (font-size: clamp( 1.75rem , 1.6673553719rem  +  0.4132231405vw , 2rem )) {
+    .slider-content-shop__price {
+      font-size: clamp( 1.75rem , 1.6673553719rem  +  0.4132231405vw , 2rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.75rem , 1.6673553719rem  +  0.4132231405vw , 2rem )) {
+    .slider-content-shop__price {
+      font-size: calc(1.75rem + 0.25 * (100vw - 20rem) / 60.5);
+    }
+}
+
+@supports (font-size: clamp( 1.25rem , 1.0847107438rem  +  0.826446281vw , 1.75rem )) {
+    .extras-shop-product__title {
+      font-size: clamp( 1.25rem , 1.0847107438rem  +  0.826446281vw , 1.75rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.25rem , 1.0847107438rem  +  0.826446281vw , 1.75rem )) {
+    .extras-shop-product__title {
+      font-size: calc(1.25rem + 0.5 * (100vw - 20rem) / 60.5);
+    }
+}
+
+@supports (letter-spacing: clamp( 0.125rem , 0.0010330579rem  +  0.6198347107vw , 0.5rem )) {
+    .extras-shop-item__title {
+      letter-spacing: clamp( 0.125rem , 0.0010330579rem  +  0.6198347107vw , 0.5rem );
+    }
+}
+
+@supports not (letter-spacing: clamp( 0.125rem , 0.0010330579rem  +  0.6198347107vw , 0.5rem )) {
+    .extras-shop-item__title {
+      letter-spacing: calc(0.125rem + 0.375 * (100vw - 20rem) / 60.5);
     }
 }
 }
