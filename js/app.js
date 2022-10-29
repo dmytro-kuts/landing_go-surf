@@ -6515,10 +6515,12 @@
             }));
         }
     }), 0);
-    const btnSearch = document.querySelector(".search-form__icon");
-    btnSearch.addEventListener("click", (() => {
-        btnSearch.parentNode.classList.toggle("active");
-    }));
+    const btnSearch = document.querySelector(".menu__search");
+    document.addEventListener("click", search);
+    function search(event) {
+        if (event.target.closest(".search-form__icon")) btnSearch.classList.toggle("_active");
+        if (!event.target.closest(".menu__search")) btnSearch.classList.remove("_active");
+    }
     window["FLS"] = false;
     isWebp();
     menuInit();

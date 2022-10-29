@@ -772,7 +772,7 @@ body {
   transition: opacity 0.8s ease 0s;
 }
 
-.active .search-form__item {
+._active .search-form__item {
   opacity: 1;
   overflow: visible;
 }
