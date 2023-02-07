@@ -6,7 +6,7 @@
 	"private": true,
 	"license": "",
 	"type": "module",
-	"homepage": "https://dmytro-kuts.github.io/landing-page_go-surf/",
+	"homepage": "https://dmytro-kuts.github.io/landing_go-surf/",
 	"scripts": {
 		"start": "npm i --legacy-peer-deps",
 		"dev": "gulp && webpack serve --progress -c config/webpack.dev.js",
