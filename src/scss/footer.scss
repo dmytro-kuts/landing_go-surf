@@ -1,0 +1,33 @@
+//====================================================================================================
+.footer {
+    background-color: $blackColor;
+    min-height: rem(215);
+    display: flex;
+    // .footer__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        gap: rem(27);
+    }
+
+    // .footer__logo
+
+    &__logo {
+    }
+
+    // .footer__copy
+
+    &__copy {
+        font-weight: 300;
+        font-size: rem(12);
+        line-height: math.div(14 , 12);
+        letter-spacing: rem(1.05);
+        opacity: 0.5;
+    }
+}
+
+//====================================================================================================
