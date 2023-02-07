@@ -6,7 +6,7 @@
 	"private": true,
 	"license": "",
 	"type": "module",
-	"homepage": "https://dmytro24.github.io/landing-page_go-surf/",
+	"homepage": "https://dmytro-kuts.github.io/landing-page_go-surf/",
 	"scripts": {
 		"start": "npm i --legacy-peer-deps",
 		"dev": "gulp && webpack serve --progress -c config/webpack.dev.js",
@@ -74,6 +74,7 @@
 		"webpack-stream": "latest"
 	},
 	"dependencies": {
+		"gh-pages": "^5.0.0",
 		"simplebar": "latest"
 	}
 }
